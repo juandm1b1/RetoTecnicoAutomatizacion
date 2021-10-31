@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import userinterface.RegistrationPages;
+import userinterface.WelcomeMessagePage;
 
 public class Answer implements Question<Boolean> {
 
@@ -21,7 +22,8 @@ public class Answer implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
 
         boolean result;
-        String welcomeMessage = Text.of(RegistrationPages.WELCOME_MESSAGE).viewedBy(actor).asString();
+
+        String welcomeMessage = Text.of(WelcomeMessagePage.WELCOME_MESSAGE).viewedBy(actor).asString();
 
         if(question.equals(welcomeMessage)) {
             result = true;

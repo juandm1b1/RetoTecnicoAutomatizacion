@@ -85,25 +85,40 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@2a105ef4
+<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@1adaaea1
 
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/uTestRegistration.feature:17 ?[0m# Sign up to uTest
+?[31msrc/test/resources/features/uTestRegistration.feature:18 ?[0m# Sign up to uTest
 
-1 Scenarios (?[31m1 failed?[0m)
-3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-0m28,545s
+2 Scenarios (?[31m2 failed?[0m)
+6 Steps (?[31m2 failed?[0m, ?[32m4 passed?[0m)
+1m39,535s
 
-java.lang.AssertionError: invalid selector: Unable to locate an element with the xpath expression /html/body/ui-view/unauthenticated-container/div/div/div/ui-view/div/div/div/div[1]/div/h1] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/ui-view/unauthenticated-container/div/div/div/ui-view/div/div/div/div[1]/div/h1]' is not a valid XPath expression.
-  (Session info: chrome=94.0.4606.81)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&quot;Welcome to the world's largest community of freelance software testers!&quot;)]&quot;}
+  (Session info: chrome=95.0.4638.54)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-KEUA4AQO', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64440}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa11f57fc59fd8b790aadfae1f707596
-*** Element info: {Using=xpath, value=/html/body/ui-view/unauthenticated-container/div/div/div/ui-view/div/div/div/div[1]/div/h1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a7db27acbca7143d5818b43bd36d21c
+*** Element info: {Using=xpath, value=//h1[contains(text(),&quot;Welcome to the world's largest community of freelance software testers!&quot;)]}
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at stepdefinitions.UTestRegistrationStepDefinitions.heHasRegisteredOnTheWebsiteAndReceivesAMessage(UTestRegistrationStepDefinitions.java:39)
+	at ?.he has registered on the website and receives a message(src/test/resources/features/uTestRegistration.feature:11)
+
+java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&quot;Welcome to the world's largest community of freelance software testers!&quot;)]&quot;}
+  (Session info: chrome=95.0.4638.54)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KEUA4AQO', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 603fc675f68c5bdeaf2fa1ebe9bd9d56
+*** Element info: {Using=xpath, value=//h1[contains(text(),&quot;Welcome to the world's largest community of freelance software testers!&quot;)]}
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
@@ -145,7 +160,8 @@ Session ID: fa11f57fc59fd8b790aadfae1f707596
 
 TEST STARTED: Sign up to uTest
 -------------------------------------------------------------------(utest-registration;sign-up-to-utest)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@60a3431
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5a022586
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@f60edb5
 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 </pre>
 </span>
@@ -158,7 +174,7 @@ TEST STARTED: Sign up to uTest
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 25/10/2021 02:07:18 AM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 31/10/2021 01:27:21 PM</p>
 </div>
 </div>
 </body>

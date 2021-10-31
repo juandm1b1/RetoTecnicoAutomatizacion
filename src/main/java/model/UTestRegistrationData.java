@@ -7,6 +7,8 @@ public class UTestRegistrationData {
     private String strMonthOfBirth;
     private String strDayOfBirth;
     private String strYearOfBirth;
+    private String strCity;
+    private String strCodPostal;
     private String strPassword;
     private String strConfirmPassword;
     private String strMessage;
@@ -58,6 +60,18 @@ public class UTestRegistrationData {
     public void setStrYearOfBirth(String strYearOfBirth) {
         this.strYearOfBirth = strYearOfBirth;
     }
+
+    public String getStrCity() {
+        return strCity;
+    }
+
+    public void setStrCity(String strCity) {
+        this.strCity = strCity;
+    }
+
+    public String getStrCodPostal() { return strCodPostal; }
+
+    public void setStrCodPostal(String strCodPostal) { this.strCodPostal = strCodPostal; }
 
     public String getStrPassword() {
         return strPassword;

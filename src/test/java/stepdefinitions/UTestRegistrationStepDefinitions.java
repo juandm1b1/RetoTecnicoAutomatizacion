@@ -30,8 +30,8 @@ public class UTestRegistrationStepDefinitions {
     public void heFillsOutTheSignupForm(List<UTestRegistrationData> uTestRegistrationData) throws Exception {
         OnStage.theActorCalled("Juan").attemptsTo(Registration.signUp(uTestRegistrationData.get(0).getStrFirstName(),
                 uTestRegistrationData.get(0).getStrLastName(),uTestRegistrationData.get(0).getStrEmail(),uTestRegistrationData.get(0).getStrMonthOfBirth(),
-                uTestRegistrationData.get(0).getStrDayOfBirth(),uTestRegistrationData.get(0).getStrYearOfBitrh(),uTestRegistrationData.get(0).getStrPassword(),
-                uTestRegistrationData.get(0).getStrConfirmPassword()));
+                uTestRegistrationData.get(0).getStrDayOfBirth(),uTestRegistrationData.get(0).getStrYearOfBitrh(),uTestRegistrationData.get(0).getStrCity(),
+                uTestRegistrationData.get(0).getStrCodPostal(),uTestRegistrationData.get(0).getStrPassword(),uTestRegistrationData.get(0).getStrConfirmPassword()));
     }
 
     @Then("^he has registered on the website and receives a message$")
