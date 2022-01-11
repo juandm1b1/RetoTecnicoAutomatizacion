@@ -3,8 +3,7 @@ package questions;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
-import userinterface.RegistrationPages;
-import userinterface.WelcomeMessagePage;
+import userinterface.WelcomeMesPage;
 
 public class Answer implements Question<Boolean> {
 
@@ -23,7 +22,7 @@ public class Answer implements Question<Boolean> {
 
         boolean result;
 
-        String welcomeMessage = Text.of(WelcomeMessagePage.WELCOME_MESSAGE).viewedBy(actor).asString();
+        String welcomeMessage = Text.of(WelcomeMesPage.WELCOME_MESSAGE).viewedBy(actor).asString();
 
         if(question.equals(welcomeMessage)) {
             result = true;

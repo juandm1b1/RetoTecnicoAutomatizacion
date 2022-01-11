@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-10-2021 13:25</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-01-2022 11:04</span>
     <br style="clear:left"/>
 </div>
 
@@ -179,9 +179,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Sign up to uTest
+                                <span class="failing-color">Sign up to uTest
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -197,7 +197,7 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given than Juan wants to sign up to the uTest site<br>When he fills out the signup form<br><table class='embedded'><thead><th>strFirstName</th><th>strLastName</th><th>strEmail</th><th>strMonthOfBirth</th><th>strDayOfBirth</th><th>strYearOfBirth</th><th>strCity</th><th>strCodPostal</th><th>strPassword</th><th>strConfirmPassword</th></thead><tbody><tr><td>&lt;strFirstName&gt;</td><td>&lt;strLastName&gt;</td><td>&lt;strEmail&gt;</td><td>&lt;strMonthOfBirth&gt;</td><td>&lt;strDayOfBirth&gt;</td><td>&lt;strYearOfBirth&gt;</td><td>&lt;strCity&gt;</td><td>&lt;strCodPostal&gt;</td><td>&lt;strPassword&gt;</td><td>&lt;strConfirmPassword&gt;</td></tr></tbody></table><br>Then he has registered on the website and receives a message<br><table class='embedded'><tbody><tr><td>strMessage</td></tr><tr><td>Welcome to the world's largest community of freelance software testers!</td></tr></tbody></table></div>
+        <div class="scenario">Given than Juan wants to sign up to the uTest site<br>When he fills out the signup form<br><table class='embedded'><thead><th>strFirstName</th><th>strLastName</th><th>strEmail</th><th>strMonthOfBirth</th><th>strDayOfBirth</th><th>strYearOfBirth</th><th>strLanguages</th><th>strCity</th><th>strCodPostal</th><th>strMobileDevice</th><th>strModel</th><th>strOS</th><th>strPassword</th><th>strConfirmPassword</th></thead><tbody><tr><td>&lt;strFirstName&gt;</td><td>&lt;strLastName&gt;</td><td>&lt;strEmail&gt;</td><td>&lt;strMonthOfBirth&gt;</td><td>&lt;strDayOfBirth&gt;</td><td>&lt;strYearOfBirth&gt;</td><td>&lt;strLanguages&gt;</td><td>&lt;strCity&gt;</td><td>&lt;strCodPostal&gt;</td><td>&lt;strMobileDevice&gt;</td><td>&lt;strModel&gt;</td><td>&lt;strOS&gt;</td><td>&lt;strPassword&gt;</td><td>&lt;strConfirmPassword&gt;</td></tr></tbody></table><br>Then he has registered on the website and receives a message Welcome to the world's  community of freelance software testers!</div>
     </div>
 
     <div id="beforetable"></div>
@@ -208,7 +208,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Assertion error: no such element: Unable to locate element: {'method':'xpath','selector':'//h1[contains(text(),'Welcome to the world's largest community of freelance software testers!')]'}</span>
+                    <span class="error-message error-message-title">Assertion error: Status no equals, expect '%s', actual '%s' - Expected: is 'Welcome to the world's  community of freelance software testers!' but: was 'Welcome to the world's largest community of freelance software testers!'</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -228,7 +228,7 @@
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>stepdefinitions.UTestRegistrationStepDefinitions.heHasRegisteredOnTheWebsiteAndReceivesAMessage(UTestRegistrationStepDefinitions.java:39)<br />✽.he has registered on the website and receives a message(src/test/resources/features/uTestRegistration.feature:11)<br /></pre>
+                        <pre>stepdefinitions.UTestRegStepDefinitions.heHasRegisteredOnTheWebsiteAndReceivesAMessage(UTestRegStepDefinitions.java:50)<br />✽.he has registered on the website and receives a message Welcome to the world's  community of freelance software testers!(src/test/resources/features/uTestReg.feature:11)<br /></pre>
                     </div>
 
                 </div>
@@ -238,85 +238,62 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource7789633306720102376.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource4015612168550943163.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="0378f949c70611a75c2d22641c3eb5a8a38699781f95d2e2b83953e6054a0373.png" title=" Example: {strFirstName=Juan David, strLastName=Botero, strEmail=soundga226@yahoo.es, strMonthOfBirth=number:1, strDayOfBirth=12, strYearOfBirth=1999, strCity=Bello Antioquia, Colombia, strCodPostal=051050, strPassword=Martinez1985++, strConfirmPassword=Martinez1985++}" width="1920"/>
-                <img src="0378f949c70611a75c2d22641c3eb5a8a38699781f95d2e2b83953e6054a0373.png" title=" Given than Juan wants to sign up to the uTest site" width="1920"/>
-                <img src="0378f949c70611a75c2d22641c3eb5a8a38699781f95d2e2b83953e6054a0373.png" title=" Juan open up" width="1920"/>
-                <img src="0378f949c70611a75c2d22641c3eb5a8a38699781f95d2e2b83953e6054a0373.png" title=" Juan opens the U test page" width="1920"/>
-                <img src="6f1e0c1cb0633337a8ff09be75b37382c5f1aa9227bb83e5b7940e3283bdd2b2.png" title=" Juan clicks on Button that shows us the signup form" width="1920"/>
-                <img src="6f1e0c1cb0633337a8ff09be75b37382c5f1aa9227bb83e5b7940e3283bdd2b2.png" title=" Juan open up (completed)" width="1920"/>
-                <img src="a865f66620a5d7ba978012896f08fae930fbe186d0ba8ea8fef93166843f5f79.png" title=" Given than Juan wants to sign up to the uTest site (completed)" width="1920"/>
-                <img src="eb196f2bf37839ff4546e8987bff019f4e00337914c034c4cff1e7d4a2d15e52.png" title=" When he fills out the signup form
-| strFirstName | strLastName | strEmail | strMonthOfBirth | strDayOfBirth | strYearOfBirth | strCity | strCodPostal | strPassword | strConfirmPassword |
-| Juan David | Botero | soundga226@yahoo.es | number:1 | 12 | 1999 | Bello Antioquia, Colombia | 051050 | Martinez1985++ | Martinez1985++ |" width="1920"/>
-                <img src="eb196f2bf37839ff4546e8987bff019f4e00337914c034c4cff1e7d4a2d15e52.png" title=" Juan registration" width="1920"/>
-                <img src="eb196f2bf37839ff4546e8987bff019f4e00337914c034c4cff1e7d4a2d15e52.png" title=" Juan enters 'Juan David' into Where the user writes their first name" width="1920"/>
-                <img src="c64c6c6486e3315ccfeaabbb784182039569ee7dc10b4dd1e86c9b5becc3f1ee.png" title=" Juan enters 'Botero' into Where the user writes their last name" width="1920"/>
-                <img src="92e1b54346f3c6ae112e617908daeaf109f1daa76a20ccd3887a4e7e5577bca4.png" title=" Juan enters 'soundga226@yahoo.es' into Where the user writes their email" width="1920"/>
-                <img src="307eb1910f1e64319ca4281562b0b8ea58055418fa492ad26c2a5a89cc8649cf.png" title=" Juan enters 'number:1' into Where the user selects their birth month" width="1920"/>
-                <img src="2e9d7d7148bd686504da57ddca6adb9e28a454ee8e116f0601c8323e132debe5.png" title=" Juan enters '12' into Where the user writes their birth day" width="1920"/>
-                <img src="96684d34b7338812379130b234aac6b6a5ef717fe44c8b55949994badecb1ea8.png" title=" Juan enters '1999' into Where the user writes their birth year" width="1920"/>
-                <img src="d58126887e57f4fc29e7a155a5a3d31aaa211860d5c9b7a0f7cde6e495d0faaf.png" title=" Juan clicks on Button that shows us the next signup form page" width="1920"/>
-                <img src="d452316a2583a94b9974c28a40570b143232ea9ebf6277fe34da40e1cca95cbe.png" title=" Juan enters 'Bello Antioquia, Colombia' into Where the user selects their ubication/city" width="1920"/>
-                <img src="50a18f0746b1840c6424ee8aab311829f24f67a55ddc97717eef2c92772971c9.png" title=" Juan types 'ARROW_DOWN' in Where the user selects their ubication/city" width="1920"/>
-                <img src="d5e8434e1fd23f5f9fb3d24f1f23008e82cf570326c6aecc5025e984257a09fb.png" title=" Juan types 'ENTER' in Where the user selects their ubication/city" width="1920"/>
-                <img src="f4908446a82b3fc1694623d68f16404922f81a54e04589c1a2059801ca1fda24.png" title=" Juan enters '051050' into Where the user puts their postal code" width="1920"/>
-                <img src="cb1a1d03ec3ed935dd80be8ef966813fb90a715dde1b236314cd62869d3ad86c.png" title=" Juan clicks on Button that shows us the next signup form page" width="1920"/>
-                <img src="8af6cd33e4386e3577b57d46193b4309f043d702ebca940692345d98196dd0a9.png" title=" Juan clicks on Button that shows us the last signup form page" width="1920"/>
-                <img src="4515354880005bd8b825ac103b7053bb95c0b120a7b7068402c985b4f7b87bdc.png" title=" Juan enters 'Martinez1985++' into Where the user writes their password" width="1920"/>
-                <img src="509aeeb197dd7eda8e8d6065c32efa9a6bf322ef4c05389c66c1852e2d7a369b.png" title=" Juan enters 'Martinez1985++' into Where the user confirms their password" width="1920"/>
-                <img src="319aa23251f769ecc99e8a07f94ccfb8576f77540cd361f3f28236bf37054733.png" title=" Juan clicks on Where the user accepts the uTest Terms of Use" width="1920"/>
-                <img src="526282450a8e301dea23ef30d18d71039adac4a69fed2749b46019280c9b3dec.png" title=" Juan clicks on Where the user accepts the uTest Privacy Policy" width="1920"/>
-                <img src="56409a6d5a76963df16fb1fe5f3fbf6c10b45110024054b730063aac4fcbe91e.png" title=" Juan clicks on Button that completes the setup" width="1920"/>
-                <img src="56409a6d5a76963df16fb1fe5f3fbf6c10b45110024054b730063aac4fcbe91e.png" title=" Juan registration (completed)" width="1920"/>
-                <img src="56409a6d5a76963df16fb1fe5f3fbf6c10b45110024054b730063aac4fcbe91e.png" title=" When he fills out the signup form
-| strFirstName | strLastName | strEmail | strMonthOfBirth | strDayOfBirth | strYearOfBirth | strCity | strCodPostal | strPassword | strConfirmPassword |
-| Juan David | Botero | soundga226@yahoo.es | number:1 | 12 | 1999 | Bello Antioquia, Colombia | 051050 | Martinez1985++ | Martinez1985++ | (completed)" width="1920"/>
-                <img src="35fd321adcbac2f24665b2c7f65b61127415384cf110e827d1b2dba3be93d8d2.png" title=" Then he has registered on the website and receives a message
-| strMessage |
-| Welcome to the world's largest community of freelance software testers! |" width="1920"/>
-                <img src="35fd321adcbac2f24665b2c7f65b61127415384cf110e827d1b2dba3be93d8d2.png" title=" Then answer" width="1920"/>
-                <img src="29246b28ffa244b78c329cf4b8ea561fdb095595f8136247011ea2f6f43d0fb6.png" title=" Example: {strFirstName=Wilson, strLastName=Medina, strEmail=abcd@yahoo.es, strMonthOfBirth=number:7, strDayOfBirth=12, strYearOfBirth=1999, strCity=Medellin, strCodPostal=051050, strPassword=Martinez1985++, strConfirmPassword=Martinez1985++}" width="1920"/>
-                <img src="29246b28ffa244b78c329cf4b8ea561fdb095595f8136247011ea2f6f43d0fb6.png" title=" Given than Juan wants to sign up to the uTest site" width="1920"/>
-                <img src="29246b28ffa244b78c329cf4b8ea561fdb095595f8136247011ea2f6f43d0fb6.png" title=" Juan open up" width="1920"/>
-                <img src="29246b28ffa244b78c329cf4b8ea561fdb095595f8136247011ea2f6f43d0fb6.png" title=" Juan opens the U test page" width="1920"/>
-                <img src="0b98848ea4228de1b751a590317ce1f060d5b5d12ab2c53f3d1c842de4876599.png" title=" Juan clicks on Button that shows us the signup form" width="1920"/>
-                <img src="0b98848ea4228de1b751a590317ce1f060d5b5d12ab2c53f3d1c842de4876599.png" title=" Juan open up (completed)" width="1920"/>
-                <img src="073b59dc0cafa50773a804fd1333c4ab4013d65c7df88a3f0fcbd4490e0e5972.png" title=" Given than Juan wants to sign up to the uTest site (completed)" width="1920"/>
-                <img src="19987e80879066570576d1b7b4ea8f7dcdd51498f45c146278bdb0375dd9ddaa.png" title=" When he fills out the signup form
-| strFirstName | strLastName | strEmail | strMonthOfBirth | strDayOfBirth | strYearOfBirth | strCity | strCodPostal | strPassword | strConfirmPassword |
-| Wilson | Medina | abcd@yahoo.es | number:7 | 12 | 1999 | Medellin | 051050 | Martinez1985++ | Martinez1985++ |" width="1920"/>
-                <img src="19987e80879066570576d1b7b4ea8f7dcdd51498f45c146278bdb0375dd9ddaa.png" title=" Juan registration" width="1920"/>
-                <img src="19987e80879066570576d1b7b4ea8f7dcdd51498f45c146278bdb0375dd9ddaa.png" title=" Juan enters 'Wilson' into Where the user writes their first name" width="1920"/>
-                <img src="588d7faf56d0fac25385f40b78f57863832215f759cb841dd6b73ac48c21866e.png" title=" Juan enters 'Medina' into Where the user writes their last name" width="1920"/>
-                <img src="48074acb93555a141bda9730a85bc30db0cbce0e46ca1c6c694e27f803d3311d.png" title=" Juan enters 'abcd@yahoo.es' into Where the user writes their email" width="1920"/>
-                <img src="b02f9cd5e78bc9bb80d20172852f6caeb703aa42e56b36f017a02689fa8ec101.png" title=" Juan enters 'number:7' into Where the user selects their birth month" width="1920"/>
-                <img src="5e9be023b2bc2a41a0cdafe714666d3b5802a07c04bcf5841a46541bc9e04f39.png" title=" Juan enters '12' into Where the user writes their birth day" width="1920"/>
-                <img src="9ef2b648ee9180fc00383237e379b4d5e2a9d050e4686a175ec8493d9574fccc.png" title=" Juan enters '1999' into Where the user writes their birth year" width="1920"/>
-                <img src="4e359a0e39834074e37bd0863e8df901888ddbe7da3a30150464824cb849f25e.png" title=" Juan clicks on Button that shows us the next signup form page" width="1920"/>
-                <img src="be9ac16fb02c8a4253e48d6e8cd53601091c2159783119556c04756e367c8e02.png" title=" Juan enters 'Medellin' into Where the user selects their ubication/city" width="1920"/>
-                <img src="c16f462e51fd0b970b4de09d1514203d7d81b2574d71f53439bcd122108b4f6f.png" title=" Juan types 'ARROW_DOWN' in Where the user selects their ubication/city" width="1920"/>
-                <img src="b1944ccc5f30160b20af35209288acad8ba3497c86e45917bfdefd24ce4bb311.png" title=" Juan types 'ENTER' in Where the user selects their ubication/city" width="1920"/>
-                <img src="528991dbb52d2dd9e0d5fc81551f3f596343f77232767e541269c7559b591863.png" title=" Juan enters '051050' into Where the user puts their postal code" width="1920"/>
-                <img src="cb1a1d03ec3ed935dd80be8ef966813fb90a715dde1b236314cd62869d3ad86c.png" title=" Juan clicks on Button that shows us the next signup form page" width="1920"/>
-                <img src="8af6cd33e4386e3577b57d46193b4309f043d702ebca940692345d98196dd0a9.png" title=" Juan clicks on Button that shows us the last signup form page" width="1920"/>
-                <img src="4515354880005bd8b825ac103b7053bb95c0b120a7b7068402c985b4f7b87bdc.png" title=" Juan enters 'Martinez1985++' into Where the user writes their password" width="1920"/>
-                <img src="509aeeb197dd7eda8e8d6065c32efa9a6bf322ef4c05389c66c1852e2d7a369b.png" title=" Juan enters 'Martinez1985++' into Where the user confirms their password" width="1920"/>
-                <img src="319aa23251f769ecc99e8a07f94ccfb8576f77540cd361f3f28236bf37054733.png" title=" Juan clicks on Where the user accepts the uTest Terms of Use" width="1920"/>
-                <img src="526282450a8e301dea23ef30d18d71039adac4a69fed2749b46019280c9b3dec.png" title=" Juan clicks on Where the user accepts the uTest Privacy Policy" width="1920"/>
-                <img src="e56c1f42b333045e9a31dcedd1350c7c80bea2e1088a375cae57bb7698a1e5d4.png" title=" Juan clicks on Button that completes the setup" width="1920"/>
-                <img src="e56c1f42b333045e9a31dcedd1350c7c80bea2e1088a375cae57bb7698a1e5d4.png" title=" Juan registration (completed)" width="1920"/>
-                <img src="362c0a06213b5fb89b02f070b172688690e645a29807c207b79c7e4bb26bbce9.png" title=" When he fills out the signup form
-| strFirstName | strLastName | strEmail | strMonthOfBirth | strDayOfBirth | strYearOfBirth | strCity | strCodPostal | strPassword | strConfirmPassword |
-| Wilson | Medina | abcd@yahoo.es | number:7 | 12 | 1999 | Medellin | 051050 | Martinez1985++ | Martinez1985++ | (completed)" width="1920"/>
-                <img src="b088510c3e55e141b76626e922e4adc43611b570a398c9a904e60f9c9ed23a78.png" title=" Then he has registered on the website and receives a message
-| strMessage |
-| Welcome to the world's largest community of freelance software testers! |" width="1920"/>
-                <img src="b088510c3e55e141b76626e922e4adc43611b570a398c9a904e60f9c9ed23a78.png" title=" Then answer: <span class='error-color'>ERROR</span>" width="1920"/>
+                <img src="29cd6c53ce0ebc6289710ea332b5922390ee920efef685a01c585c2702d86e73.png" title=" Example: {strFirstName=Juan David, strLastName=Botero, strEmail=soundga337@yahoo.es, strMonthOfBirth=number:1, strDayOfBirth=12, strYearOfBirth=1999, strLanguages=Albanian,Spanish, strCity=Col Bello Antioquia, Colombia, strCodPostal=051050, strMobileDevice=Samsung, strModel=Reality, strOS=BREW, strPassword=Martinez1985++, strConfirmPassword=Martinez1985++}" width="1920"/>
+                <img src="29cd6c53ce0ebc6289710ea332b5922390ee920efef685a01c585c2702d86e73.png" title=" Given than Juan wants to sign up to the uTest site" width="1920"/>
+                <img src="29cd6c53ce0ebc6289710ea332b5922390ee920efef685a01c585c2702d86e73.png" title=" Juan open up" width="1920"/>
+                <img src="29cd6c53ce0ebc6289710ea332b5922390ee920efef685a01c585c2702d86e73.png" title=" Juan opens the U test page" width="1920"/>
+                <img src="76f5f3464be4027e27629f89327f96bc7b200087c2989a529fb738cc6c9cfa41.png" title=" Juan clicks on Button that shows us the signup form" width="1920"/>
+                <img src="76f5f3464be4027e27629f89327f96bc7b200087c2989a529fb738cc6c9cfa41.png" title=" Juan open up (completed)" width="1920"/>
+                <img src="e71b0aeb56692f19914d4b0626ff8e459d6526dc25c64bab0531a7721ef78b3f.png" title=" Given than Juan wants to sign up to the uTest site (completed)" width="1920"/>
+                <img src="b80b6c170d360c13ccea0426847164f07701b773a726b9d370a5815a711cf4cc.png" title=" When he fills out the signup form
+| strFirstName | strLastName | strEmail | strMonthOfBirth | strDayOfBirth | strYearOfBirth | strLanguages | strCity | strCodPostal | strMobileDevice | strModel | strOS | strPassword | strConfirmPassword |
+| Juan David | Botero | soundga337@yahoo.es | number:1 | 12 | 1999 | Albanian,Spanish | Col Bello Antioquia, Colombia | 051050 | Samsung | Reality | BREW | Martinez1985++ | Martinez1985++ |" width="1920"/>
+                <img src="b80b6c170d360c13ccea0426847164f07701b773a726b9d370a5815a711cf4cc.png" title=" Juan registration one" width="1920"/>
+                <img src="b80b6c170d360c13ccea0426847164f07701b773a726b9d370a5815a711cf4cc.png" title=" Juan enters 'Juan David' into Where the user writes their first name" width="1920"/>
+                <img src="9f544a2a5d19f70ce04eade227114922b2a9c9972ccc2723a167ab88d1fc1d3c.png" title=" Juan enters 'Botero' into Where the user writes their last name" width="1920"/>
+                <img src="5525c5e00a836ccbed53d7e91a4aad7905518df5f10754f8b2937a4ed3a01324.png" title=" Juan enters 'soundga337@yahoo.es' into Where the user writes their email" width="1920"/>
+                <img src="a7b1578fa56d9c8ce177eb3548e796cd15ee147aacf318e8cb9ad9dcc6cb161e.png" title=" Juan enters 'number:1' into Where the user selects their birth month" width="1920"/>
+                <img src="adf8242921715e002479175401f9bfd29f3e1b0329a7b1704e4fb1b11b007897.png" title=" Juan enters '12' into Where the user writes their birth day" width="1920"/>
+                <img src="e153c1682ce6994e6bb7a860269ffe712d79db2022051ab6fdf552ae625e5ce8.png" title=" Juan enters '1999' into Where the user writes their birth year" width="1920"/>
+                <img src="d2895a969fa762b93408a01f6b060199bff1ddd603e7c90c77947fb7f7a6bd53.png" title=" Juan clicks on Lenguages div" width="1920"/>
+                <img src="c96c524ee9b2384a55b8d22a9bc5c1ab1c02f7bbf49ca16cccc184bf66053d53.png" title=" Juan clicks on Specific language option" width="1920"/>
+                <img src="c1c479d0a75233e8d260576ebe6bb1c3a5ad5a64d35347fd304c3b0c42aa6914.png" title=" Juan clicks on Lenguages div" width="1920"/>
+                <img src="f5dfdc94db9d5c91c2e7c59b101e5536f49070384995a29d6cf6ac134dde584e.png" title=" Juan clicks on Specific language option" width="1920"/>
+                <img src="255f577114181b6706ad318c32264a881a4205962792181255602a818e074a21.png" title=" Juan clicks on Button that shows us the next signup form page" width="1920"/>
+                <img src="255f577114181b6706ad318c32264a881a4205962792181255602a818e074a21.png" title=" Juan registration one (completed)" width="1920"/>
+                <img src="8d1c95a2118daf9eb983333283ab08bdece4b1c09d43746e999f964d2d3d6e11.png" title=" Juan registration two" width="1920"/>
+                <img src="8d1c95a2118daf9eb983333283ab08bdece4b1c09d43746e999f964d2d3d6e11.png" title=" Juan enters 'Col Bello Antioquia, Colombia' into Where the user selects their location/city" width="1920"/>
+                <img src="6369b28acb9cf9271226eaa6bbecc22ac2eee2f7a42ad131acfdde22d41e7ee0.png" title=" Juan types 'ARROW_DOWN' in Where the user selects their location/city" width="1920"/>
+                <img src="7554d91bcf844a19c908b022d59a53dcaad282a5846d93d20bb5b36e97fdf9f1.png" title=" Juan types 'ENTER' in Where the user selects their location/city" width="1920"/>
+                <img src="535e44f2b50fe6912152d6b4cfe7162e6f1399a6a7d0ee801bb68bbfab75dee6.png" title=" Juan enters '051050' into Where the user puts their postal code" width="1920"/>
+                <img src="f4aefecd3b649570fbcb7f702408f3cec5012fb32aa8b985e18d59b92be38629.png" title=" Juan clicks on Button that shows us the next signup form page" width="1920"/>
+                <img src="f4aefecd3b649570fbcb7f702408f3cec5012fb32aa8b985e18d59b92be38629.png" title=" Juan registration two (completed)" width="1920"/>
+                <img src="09340331f6657b2815856c02f03d05c887a52a75eee1e05325ed8b53828368b9.png" title=" Juan registration three" width="1920"/>
+                <img src="09340331f6657b2815856c02f03d05c887a52a75eee1e05325ed8b53828368b9.png" title=" Juan clicks on Mobile device input" width="1920"/>
+                <img src="8ab1581f0282b46bc57af72a370375fc7179767388f907469128b693caaec42b.png" title=" Juan clicks on Especific mobile device option" width="1920"/>
+                <img src="6503f2ee0eca3306bf85a61dd91d593668bc0a296ec811714570c05260ab40d4.png" title=" Juan clicks on Mobile device model input" width="1920"/>
+                <img src="814b430e246894b09c00157058edc30fc104bb1b61f8980891500ec44c7a5cad.png" title=" Juan clicks on Especific model option" width="1920"/>
+                <img src="d7a621f7411b859db53e31198cd8638d55aafb65c127f88b4669bb57da858e08.png" title=" Juan clicks on Mobile device operating system input" width="1920"/>
+                <img src="e502169c25f510abccaf329250ef42200e6fcd2cb79aaed64c1e8f2fb9a977a9.png" title=" Juan clicks on Specific operating system option" width="1920"/>
+                <img src="0b82fb56c4c147b67046280660d4ab0335b41fb41012bc8c97a0f3a809107541.png" title=" Juan clicks on Button that shows us the last signup form page" width="1920"/>
+                <img src="0b82fb56c4c147b67046280660d4ab0335b41fb41012bc8c97a0f3a809107541.png" title=" Juan registration three (completed)" width="1920"/>
+                <img src="6f2df132596057dde42dacf148931d0a6db31683821c7f2bf604b5d934523910.png" title=" Juan registration four" width="1920"/>
+                <img src="6f2df132596057dde42dacf148931d0a6db31683821c7f2bf604b5d934523910.png" title=" Juan enters 'Martinez1985++' into Where the user writes their password" width="1920"/>
+                <img src="66874636dd72c29a45b30cbb3e9809a39ef7a92585dcf83b6c7d28344f9f247f.png" title=" Juan enters 'Martinez1985++' into Where the user confirms their password" width="1920"/>
+                <img src="e23d4ce2b38c104da48dcfab88faa042dfba131223a82df3dfcc434d11b1d8a4.png" title=" Juan clicks on Where the user accepts the uTest Terms of Use" width="1920"/>
+                <img src="8e73913667df6f2967c4af5b5670fee5668899cdf867ac0c9f818bd54f9cbdb2.png" title=" Juan clicks on Where the user accepts the uTest Privacy Policy" width="1920"/>
+                <img src="5f9eb23e269a805fbeae1ff3c51fbe939d3d7772df8573706f82c2397a338ec2.png" title=" Juan clicks on Button that completes the setup" width="1920"/>
+                <img src="5f9eb23e269a805fbeae1ff3c51fbe939d3d7772df8573706f82c2397a338ec2.png" title=" Juan registration four (completed)" width="1920"/>
+                <img src="5f9eb23e269a805fbeae1ff3c51fbe939d3d7772df8573706f82c2397a338ec2.png" title=" When he fills out the signup form
+| strFirstName | strLastName | strEmail | strMonthOfBirth | strDayOfBirth | strYearOfBirth | strLanguages | strCity | strCodPostal | strMobileDevice | strModel | strOS | strPassword | strConfirmPassword |
+| Juan David | Botero | soundga337@yahoo.es | number:1 | 12 | 1999 | Albanian,Spanish | Col Bello Antioquia, Colombia | 051050 | Samsung | Reality | BREW | Martinez1985++ | Martinez1985++ | (completed)" width="1920"/>
+                <img src="aacfd27efc6ac8818fc14fb839fccfcf1a113c616dde52f55c02ff97c2e3de27.png" title=" Then he has registered on the website and receives a message Welcome to the world's  community of freelance software testers!" width="1920"/>
+                <img src="aacfd27efc6ac8818fc14fb839fccfcf1a113c616dde52f55c02ff97c2e3de27.png" title=" Then the text should be 'Welcome to the world's  community of freelance software testers!': <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
+
 import userinterface.UTestPage;
 
 public class OpenUp implements Task {
@@ -18,7 +19,7 @@ public class OpenUp implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Open.browserOn(uTestPage),
-                Click.on(uTestPage.JOIN_TODAY_BUTTON)
+                Click.on(UTestPage.JOIN_TODAY_BUTTON)
         );
     }
 }
